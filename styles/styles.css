@@ -54,8 +54,6 @@ html, body {
     width: 100%;
 }
 
-
-
 /*<!----- Fitting Stuuf into Divs and Aligning Center ----->*/
 .parent {
     position: relative;
@@ -100,9 +98,21 @@ nav.navbar a {
     color: #fff;
 }
 
-/*<!-------------------------------------------------------------------------->
-<!----- Poster ----->*/
+/*<!-------------------------------------------------------------------------->*/
+
+#title {
+    width: 60%;
+    margin-top: 50px;
+    height: 97%;
+    align-content: center;
+
+}
+
+
+/*<!----- Poster ----->*/
 #poster {
     height: 80%;
+    width: 80%;
+    overflow: hidden;
 
 }

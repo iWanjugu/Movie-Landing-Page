@@ -28,10 +28,12 @@
     </head>
 
 	</head>
-<body>
+<body class="parent">
+
 
     <!-------------------------------------------------------------------------->
     <!--- PAGE 1: Title --->
+
     <div id="wrapper1">
         <!----- Nav Bar ----->
 		<nav class="navbar navbar-inverse navbar-fixed-top" >
@@ -53,29 +55,32 @@
 		</nav>
 
         <!----- Main body: Poster ----->
-        <div id= "poster" class="col-md-12 parent fadein">
-            <img class="center" src="assets/image2.jpg" alt="">
-            <img class="center" src="assets/background3.jpg" alt="">
-            <img class="center" src="assets/background4.jpg" alt="">
+        <!--<div id="body1" class="col-md-12 parent">
+            <div class="top"></div>
+            <div class="bottom"></div>-->
 
-            <!--- APIs -->
-            <div class="col-md-2">
+            <div id="title" class="parent">
+                <!----- Page 1 top ----->
+                <div id= "poster" class="col-md-12 parent fadein center">
+                    <img class="center" src="assets/image2.jpg" alt="">
+                    <img class="center" src="assets/background3.jpg" alt="">
+                    <img class="center" src="assets/background4.jpg" alt="">
+                </div>
 
+                <!----- Page 1 mid ----->
+                <div class="col-md-12">
+
+
+
+                </div>
+                <!----- Page 1 bottom ----->
+                <div id="footer" class="col-md-12 ">
+
+
+
+                </div>
             </div>
-        </div>
-
-        <!----- Page 1 bottom ----->
-        <div class="col-md-12">
-
-
-
-        </div>
-        <!----- Page 1 bottom ----->
-        <div id="footer" class="col-md-12 ">
-
-
-
-        </div>
+       <!-- </div>-->
     </div>
 <!-------------------------------------------------------------------------->
     <!--- PAGE 2: Main --->
@@ -83,6 +88,8 @@
 
         <!----- Trailer ----->
         <div class="col-md-12">
+
+
 
         </div>
 
@@ -98,12 +105,33 @@
 </body>
 
 
-<!------- Scripts ----->
-<!--Scripts-->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <!------- Scripts ----->
+        <!--Twitter API-->
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="scripts/scripts.js" ></script>
+        <!--Facebook start-->
+
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <!--Facebook end-->
+
+        <!--Google Maps -->
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+        <!--Bootstrap-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
+
+        <!------------------------>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script src="scripts/scripts.js" ></script>
+
+
+<!-------------------------------------------------------------------------->
+
 </html>
