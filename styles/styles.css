@@ -1,0 +1,49 @@
+/***FONTS*****/
+
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light|Sigmar+One|Lobster|Patua+One|Architects+Daughter|Kaushan+Script|Fredoka+One|Rock+Salt|Shadows+Into+Light+Two|Permanent+Marker|Handlee|Great+Vibes|Just+Another+Hand|Niconne|Limelight|Damion|Calligraffitti|Audiowide|Bad+Script);
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+/*font-family: 'Poiret One', cursive;*/
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300italic,400italic,600,600italic);
+/* font-family: 'Josefin Sans', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Quattrocento:400,700);
+/*font-family: 'Quattrocento', serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Righteous);
+/*font-family: 'Fredericka the Great', cursive;
+font-family: 'Righteous', cursive; */
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+/*font-family: 'Slabo 27px', serif;*/
+/******************************************************************/
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Poiret One', cursive;
+    /*font-family: 'Slabo 27px', serif;*/
+    /*font-size: 0.7em;*/
+    color: #000;
+    box-sizing:border-box;
+}
+
+nav.navbar {
+    font-size: 1.4em;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+nav.navbar a {
+    font-weight: bold;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+h1 {
+    font-size: 200px;
