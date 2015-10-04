@@ -101,7 +101,7 @@ nav.navbar a {
 /*<!-------------------------------------------------------------------------->*/
 
 #title {
-    width: 60%;
+    width: 100%;
     margin-top: 50px;
     height: 97%;
     align-content: center;
@@ -112,7 +112,14 @@ nav.navbar a {
 /*<!----- Poster ----->*/
 #poster {
     height: 80%;
-    width: 80%;
+    width: 10%;
     overflow: hidden;
+
+}
+
+/*<!-------------------------------------------------------------------------->*/
+#trailer {
+    height: 50%;
+    width: 60%;
 
 }
