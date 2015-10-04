@@ -1,0 +1,99 @@
+/***FONTS*****/
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+/*font-family: 'Poiret One', cursive;*/
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300italic,400italic,600,600italic);
+/* font-family: 'Josefin Sans', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Quattrocento:400,700);
+/*font-family: 'Quattrocento', serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Righteous);
+/*font-family: 'Fredericka the Great', cursive;
+font-family: 'Righteous', cursive; */
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+/*font-family: 'Slabo 27px', serif;*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Satisfy|Delius|Gochi+Hand|Homemade+Apple|Short+Stack|Delius+Unicase|Princess+Sofia|Jim+Nightshade|Bonbon);
+
+/*
+font-family: 'Gloria Hallelujah', cursive;
+
+font-family: 'Satisfy', cursive;
+
+font-family: 'Delius', cursive;
+
+font-family: 'Gochi Hand', cursive;
+
+font-family: 'Homemade Apple', cursive;
+
+font-family: 'Short Stack', cursive;
+
+font-family: 'Delius Unicase', cursive;
+
+font-family: 'Princess Sofia', cursive;
+
+font-family: 'Jim Nightshade', cursive;
+
+font-family: 'Bonbon', cursive;
+*/
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter|Gloria+Hallelujah|Rock+Salt);/**
+font-family: 'Architects Daughter', cursive;
+
+font-family: 'Gloria Hallelujah', cursive;
+
+font-family: 'Rock Salt', cursive;
+*/
+/******************************************************************/
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #000;
+    box-sizing:border-box;
+    background-color: black
+
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+#intro {
+    height: 100%;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.intro-image {
+    height: 100%;
+    width: 100%;
+}
+
+.intro-image img {
+
+}
+
+
+/**Nav Bar **/
+.brand_logo a {
+    font-family: 'Rock Salt', cursive;
+
+}
+
+.brand-logo img {
+    margin-top: 7px;
+    margin-left: 50px;
+    height: 120px;
+    width: 150px;
+
+}
+.brand-logo span {
+
+}
+
+
