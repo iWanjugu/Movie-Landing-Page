@@ -83,8 +83,8 @@ video.video-bg {
     margin-right: auto;
 
 
-    -webkit-filter: opacity(.7);
-    filter: opacity(.7);
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
 }
 
 video {
@@ -98,20 +98,56 @@ width: 100%;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
 }
 
-.type1 {
-    width: 400px;
-    height: 400px;
-    background: black;
-    border: 3px solid red;
-    overflow: hidden;
+.circleBase img {
+    width: 250px;
+    height: 250px;
 }
 
-img {
-    margin-left: -40px;
-    margin-top: -30px;
-    width: 500px;
-    height: 400px;
+#anger, #disguist, #joy, #sad, #fear {
+    width: 250px;
+    height: 250px;
+    background: black;
+    border: 3px solid;
+    overflow: hidden;
+/*
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkitanimation-duration: 6s;
+    animation-duration: 6s;
+*/
 }
+#disguist {
+    border:green;
+    margin-left: 220px;
+    margin-top: 100px;
+}
+
+#anger {
+    border:red;
+    margin-left: 120px;
+    margin-top: -15px;
+}
+
+
+#joy {
+    border:yellow;
+    margin-left: 0px;
+    margin-top: 110px;
+}
+
+#sad {
+    border:blue;
+    margin-left: 450px;
+    margin-top: -30px;
+}
+
+#fear {
+    border:purple;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+
 .container {
     height: 100%;
     width: 100%;
