@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="Materialize/css/materialize.min.css" media="screen,projection"/>
         <link rel="stylesheet" href="mdl/material.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="font" href="Main/css/Carton_Six.ttf"
 
         <!--optimized for mobile-->
          <meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0>
@@ -31,7 +32,7 @@
 
 <body>
     <!-- Video Background -->
-    <video class="video-bg" loop="auto" muted autoplay poster="vid-first-frame.jpg" >
+    <video class="video-bg" loop="auto" muted autoplay >
         <source src="Main/assets/paint1.mp4" type="video/mp4">
     </video>
         <!-- Nav Bar - MDL --->
@@ -40,7 +41,11 @@
         <header class="mdl-layout__header mdl-layout__header--transparent">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Inside Out</span>
+                <span class="mdl-layout-title">
+                    <span class="inside">Inside</span>
+                    <br>
+                    <span class="out">Out</span>
+                </span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation -->
@@ -63,19 +68,19 @@
         <div class="mdl-grid">
 
             <!--disguist -->
-            <div class="mdl-cell mdl-cell--4-col">
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                 <div id="disguist" class="circleBase type3 animated fadeInUpBig">
                     <img src="Main/assets/icon_disguist.jpg" href="#">
                 </div>
             </div>
             <!-- Anger -->
-            <div class="mdl-cell mdl-cell--4-col">
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                 <div id="anger" class="circleBase type1 animated fadeInUpBig">
                     <img src="Main/assets/icon_anger.jpg" href="#">
                 </div>
             </div>
             <!-- joy -->
-            <div class="mdl-cell mdl-cell--4-col">
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                 <div id="joy" class="circleBase type2 animated fadeInUpBig">
                     <img src="Main/assets/icon_joy.jpg" href="#">
                 </div>
@@ -85,17 +90,19 @@
 
         <div class="mdl-grid">
             <!-- sadness -->
-            <div class="mdl-cell mdl-cell--6-col">
+            <div class="mdl-cell mdl-cell--2-col"></div>
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                 <div id="sad" class="circleBase type4 animated fadeInUpBig">
                     <img src="Main/assets/icon_sadness.jpg" href="#">
                 </div>
             </div>
                 <!-- fear -->
-            <div class="mdl-cell mdl-cell--6-col">
+           <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                 <div id="fear" class="circleBase type5 animated fadeInUpBig">
                     <img src="Main/assets/icon_fear.jpg" href="#">
                 </div>
             </div>
+            <div class="mdl-cell mdl-cell--2-col"></div>
         </div>
     </main>
     <!-- Header End -->

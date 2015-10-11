@@ -46,6 +46,9 @@ font-family: 'Gloria Hallelujah', cursive;
 
 font-family: 'Rock Salt', cursive;
 */
+
+
+
 /******************************************************************/
 html, body {
     margin: 0;
@@ -62,6 +65,10 @@ html, body {
 	height: 100%;
     width: 100%;
     background-color: black;
+}
+
+video {
+    width: 100%;
 }
 
 video.video-bg {
@@ -82,16 +89,33 @@ video.video-bg {
     margin-left: auto;
     margin-right: auto;
 
-
     -webkit-filter: opacity(1);
     filter: opacity(1);
 }
+/*--------------------------------------------------------*/
+/*** MAIN ***/
 
-video {
-width: 100%;
-
+main {
+    margin-top: 50px;
 }
 
+/*---------- Title ---------**/
+@font-face {
+  font-family: 'Carton Six';
+  src: url('cartonsix_nc/Carton_Six.ttf');
+}
+
+span.inside {
+    font-family: 'Carton Six';
+    font-size: 1.5em;
+}
+
+span.out {
+    margin-left: 50px;
+    font-family: 'Carton Six';
+    font-size: 1.5em;
+
+}
 /*** Circular Divs ***/
 .circleBase {
     border-radius: 50%;
@@ -109,44 +133,57 @@ width: 100%;
     background: black;
     border: 3px solid;
     overflow: hidden;
-/*
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-    -webkitanimation-duration: 6s;
-    animation-duration: 6s;
-*/
-}
-#disguist {
-    border:green;
-    margin-left: 220px;
-    margin-top: 100px;
 }
 
 #anger {
     border:red;
     margin-left: 120px;
     margin-top: -15px;
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+    -webkitanimation-duration: 4s;
+    animation-duration: 4s;
 }
-
 
 #joy {
     border:yellow;
     margin-left: 0px;
     margin-top: 110px;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkitanimation-duration: 5s;
+    animation-duration: 5s;
+}
+
+#disguist {
+    border:green;
+    margin-left: 220px;
+    margin-top: 100px;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkitanimation-duration: 5s;
+    animation-duration: 5s;
 }
 
 #sad {
     border:blue;
-    margin-left: 450px;
+    margin-left: 200px;
     margin-top: -30px;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkitanimation-duration: 4s;
+    animation-duration: 4s;
 }
 
 #fear {
     border:purple;
-    margin-left: 120px;
-    margin-top: 20px;
+    margin-left: 80px;
+    margin-top: 40px;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkitanimation-duration: 5s;
+    animation-duration: 5s;
 }
-
 
 .container {
     height: 100%;
