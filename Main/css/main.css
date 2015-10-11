@@ -67,6 +67,8 @@ html, body {
     background-color: black;
 }
 
+/***--------------------------------------------------------------***/
+/*------- TITLE/HOME PAGE -------------*/
 video {
     width: 100%;
 }
@@ -211,13 +213,6 @@ span.out {
     animation-duration: 1s;
 }
 
-
-.container {
-    height: 100%;
-    width: 100%;
-}
-
-
 /***--------------------------------------------------------------***/
 /** MDL ***/
 .demo-layout-transparent {
@@ -228,4 +223,40 @@ span.out {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: white;
+}
+
+
+/***--------------------------------------------------------------***/
+/*------- EMOTIONS -------------*/
+
+#emo-nav {
+    background-color: black;
+}
+
+#joy-page, #anger-page, #sad-page, #disguist-page, #fear-page{
+    height: 95%;
+    width: 100%;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+    -webkitanimation-duration: 5s;
+    animation-duration: 5s;
+
+}
+
+#joy-page {
+     background-color: #FCB941;
+}
+#anger-page {
+     background-color: #E01931;
+}
+#sad-page {
+     background-color: blue;
+}
+#disguist-page {
+     background-color: green;
+}
+#fear-page {
+     background-color: mediumpurple;
 }
