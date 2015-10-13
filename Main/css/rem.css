@@ -1,0 +1,164 @@
+html, body {
+/*    background-color: black;*/
+}
+.bg{
+    height: 100%;
+    overflow: hidden;
+}
+
+.videobg{
+    width: 100%;
+    height: 100%;
+    filter:brightness(100%);
+    -webkit-filter:brightness(100%);
+    -moz-filter:brightness(30%);
+    -o-filter:brightness(30%);
+    -ms-filter:brightness(30%);
+
+}
+.floaters{
+    left:  0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+
+/**** Styling Icons *****/
+@import "compass/css3";
+
+.flex-container {
+    padding: 0;
+    list-style: none;
+    height: 40%;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    width: 200px;
+    height: 205px;
+    margin-top: 0px;
+/*
+    margin-left: 80px;
+    margin-top: 50px;
+*/
+
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+/*** Circular Divs ***/
+.circleBase {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+.circleBase img {
+    width: 100%;
+    height: 100%;
+}
+
+#anger, #disguist, #joy, #sad, #fear {
+    width: 200px;
+    height: 200px;
+    background: black;
+    border: 3px solid;
+    overflow: hidden;
+}
+
+#anger {
+    border:red;
+    margin-left: 0;
+    margin-top: -10%;
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+    -webkit-animation-delay: -1.3s;
+    animation-delay: -1.3s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+#joy {
+    border:yellow;
+    margin-left: 0;
+    margin-top: 30%;
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+    -webkitanimation-duration: 5s;
+    animation-duration: 5s;
+}
+
+#disguist {
+    border:green;
+    margin-left: 0;
+    margin-top: 30%;
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkitanimation-duration: 5s;
+    animation-duration: 5s;
+}
+
+#sad {
+    border:blue;
+    margin-left: 20%;
+    margin-top: 25%;
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkitanimation-duration: 4s;
+    animation-duration: 4s;
+}
+
+#fear {
+    border:purple;
+    margin-left: -20%;
+    margin-top: 25%;
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkitanimation-duration: 5s;
+    animation-duration: 5s;
+}
+
+/* Small screens */
+@media all and (max-width: 500px, max-height: 500px) {
+  .bg{
+/*    height: 100%;*/
+    overflow: hidden;
+    flex-direction: column;
+  }
+#anger, #disguist, #joy, #sad, #fear {
+    margin: 0;
+    }
+.videobg{
+/*    width: 100%;*/
+/*    height: 100%;*/
+    filter:brightness(100%);
+    -webkit-filter:brightness(0%);
+    -moz-filter:brightness(30%);
+    -o-filter:brightness(30%);
+    -ms-filter:brightness(30%);
+
+}
+}
