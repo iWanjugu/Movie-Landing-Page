@@ -1,28 +1,48 @@
 html, body {
 /*    background-color: black;*/
 }
-.bg{
-    height: 100%;
+.bg {
+    position: relative;
+    width: 100%;
     overflow: hidden;
+
 }
 
 .videobg{
     width: 100%;
-    height: 100%;
     filter:brightness(100%);
     -webkit-filter:brightness(100%);
     -moz-filter:brightness(30%);
     -o-filter:brightness(30%);
     -ms-filter:brightness(30%);
+}
+
+
+
+/*---------- Title ---------**/
+@font-face {
+  font-family: 'Carton Six';
+  src: url('cartonsix_nc/Carton_Six.ttf');
+}
+
+span.inside {
+    font-family: 'Carton Six';
+    font-size: 1.5em;
+}
+
+span.out {
+    margin-left: 50px;
+    font-family: 'Carton Six';
+    font-size: 1.5em;
 
 }
+
 .floaters{
     left:  0;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 90%;
     position: absolute;
-
 }
 
 
@@ -32,7 +52,7 @@ html, body {
 .flex-container {
     padding: 0;
     list-style: none;
-    height: 40%;
+    height: 48%;
 
     display: -webkit-box;
     display: -moz-box;
@@ -47,7 +67,7 @@ html, body {
 .flex-item {
     width: 200px;
     height: 205px;
-    margin-top: 0px;
+    margin-top:
 /*
     margin-left: 80px;
     margin-top: 50px;
@@ -82,7 +102,7 @@ html, body {
 #anger {
     border:red;
     margin-left: 0;
-    margin-top: -10%;
+    margin-top: 10%;
     -webkit-animation-name: fadeInUpBig;
     animation-name: fadeInUpBig;
     -webkit-animation-delay: -1.3s;
@@ -95,8 +115,8 @@ html, body {
 
 #joy {
     border:yellow;
-    margin-left: 0;
-    margin-top: 30%;
+    margin-left: -30%;
+    margin-top: 60%;
     -webkit-animation-name: fadeInUpBig;
     animation-name: fadeInUpBig;
     -webkit-animation-delay: -0.6s;
@@ -107,8 +127,8 @@ html, body {
 
 #disguist {
     border:green;
-    margin-left: 0;
-    margin-top: 30%;
+    margin-left: 30%;
+    margin-top: 60%;
     -webkit-animation-name: fadeInUpBig;
     animation-name: fadeInUpBig;
     -webkit-animation-delay: 2s;
@@ -119,8 +139,8 @@ html, body {
 
 #sad {
     border:blue;
-    margin-left: 20%;
-    margin-top: 25%;
+    margin-left: 80%;
+    margin-top: -25%;
     -webkit-animation-name: fadeInUpBig;
     animation-name: fadeInUpBig;
     -webkit-animation-delay: 3s;
@@ -131,8 +151,8 @@ html, body {
 
 #fear {
     border:purple;
-    margin-left: -20%;
-    margin-top: 25%;
+    margin-left: -80%;
+    margin-top: -25%;
     -webkit-animation-name: fadeInUpBig;
     animation-name: fadeInUpBig;
     -webkit-animation-delay: 3s;

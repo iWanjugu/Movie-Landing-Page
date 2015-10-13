@@ -60,12 +60,14 @@ html, body {
     background-color: black
 
 }
+/*
 .container {
     position: relative;
 	height: 100%;
     width: 100%;
     background-color: black;
 }
+*/
 
 /***--------------------------------------------------------------***/
 /*------- TITLE/HOME PAGE -------------*/
@@ -73,7 +75,7 @@ video.video-bg {
     background-size: cover;
 
     /*to fit in div*/
-    min-width: 100%;
+/*    min-width: 100%;*/
     width: auto;
     height: 100%;
 
