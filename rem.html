@@ -15,9 +15,16 @@
     </head>
 <body>
 
-<!-- video Background -->
-<div class="bg">
+    <!-- video Background -->
+<!--    <div class="videoContainer">-->
+    <video class="videobg" autoplay loop="auto" muted>
+        <source src="Main/assets/paint1.mp4" type="video/mp4">
+        <source src="Main/assets/paint1.webm" type="video/webm" />
+    </video>
+<!--    </div>-->
 
+<!--- ALL content will be in this 'content' container -->
+<div class="content">
     <!-- Header -->
     <div class="navbar-fixed">
         <nav>
@@ -33,45 +40,47 @@
           </div>
         </nav>
     </div>
-        <video class="videobg" src="Main/assets/paint1.mp4" autoplay loop="auto" muted></video>
 
 
+
+    <!-- Body --->
     <div class="container">
-    <!-- Body- Icons -->
-    <div class="row">
-        <div class="floaters">
-            <ul class="flex-container">
-                <li class="flex-item">
-                    <div id="disguist" class="circleBase animated">
-                        <img src="Main/assets/icon_disguist.jpg">
-                    </div>
-                </li>
-                <li class="flex-item animated">
-                    <div id="anger" class="circleBase">
-                        <img src="Main/assets/icon_anger.jpg">
-                    </div>
-                </li>
-                <li class="flex-item">
-                    <div id="joy" class="circleBase animated">
-                        <img src="Main/assets/icon_joy.jpg">
-                    </div>
-                </li>
-            </ul>
-            <ul class="flex-container">
-                <li class="flex-item">
-                    <div id="sad" class="circleBase animated">
-                        <img src="Main/assets/icon_sadness.jpg">
-                    </div>
-                </li>
-                <li class="flex-item">
-                    <div id="fear" class="circleBase animated">
-                        <img src="Main/assets/icon_fear.jpg">
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+        <!-- Body- Icons -->
+        <div class="row">
+            <div class="floaters">
+                <ul class="flex-container">
+                    <li class="flex-item">
+                        <div id="disguist" class="circleBase animated">
+                            <img src="Main/assets/icon_disguist.jpg">
+                        </div>
+                    </li>
+                    <li class="flex-item animated">
+                        <div id="anger" class="circleBase">
+                            <img src="Main/assets/icon_anger.jpg">
+                        </div>
+                    </li>
+                    <li class="flex-item">
+                        <div id="joy" class="circleBase animated">
+                            <img src="Main/assets/icon_joy.jpg">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="flex-container">
+                    <li class="flex-item">
+                        <div id="sad" class="circleBase animated">
+                            <img src="Main/assets/icon_sadness.jpg">
+                        </div>
+                    </li>
+                    <li class="flex-item">
+                        <div id="fear" class="circleBase animated">
+                            <img src="Main/assets/icon_fear.jpg">
+                        </div>
+                    </li>
+                </ul>
+            </div> <!-- End of floaters-->
+        </div> <!-- End of Row -->
+
+</div><!-- End Content-->
 </div>
 
 

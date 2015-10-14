@@ -1,15 +1,44 @@
-html, body {
-/*    background-color: black;*/
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+  margin: 0;
+  padding: 0;
 }
-.bg {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
 
+html,
+body {
+  height: 100%;
 }
 
-.videobg{
-    width: 100%;
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+
+/*------- VIDEO BG --------*/
+.videobg {
+    position: fixed;
+    z-index: 1;
+
+    /** CENTERING
+    So if we nudge something 50% from the top of a container, then translate it         back up a negative 50%, it will be perfectly centred. That leaves us with this:
+    */
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    /** FULL SCREENING **/
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
+
     filter:brightness(100%);
     -webkit-filter:brightness(100%);
     -moz-filter:brightness(30%);
@@ -65,9 +94,9 @@ span.out {
 }
 
 .flex-item {
-    width: 200px;
-    height: 205px;
-    margin-top:
+    width: 30%;
+    height: 200px;
+    margin-top: 0;
 /*
     margin-left: 80px;
     margin-top: 50px;
@@ -84,6 +113,9 @@ span.out {
 .circleBase {
     border-radius: 50%;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 100%;
+    height: auto;
+
 }
 
 .circleBase img {
@@ -92,8 +124,8 @@ span.out {
 }
 
 #anger, #disguist, #joy, #sad, #fear {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     background: black;
     border: 3px solid;
     overflow: hidden;
