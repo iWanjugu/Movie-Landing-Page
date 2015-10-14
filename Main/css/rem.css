@@ -14,7 +14,6 @@ body {
   height: 100%;
 }
 
-
 .content {
   position: relative;
   z-index: 2;
@@ -48,7 +47,7 @@ body {
 
 
 
-/*---------- Title ---------**/
+/*---------- Title and Nav Bar ---------**/
 @font-face {
   font-family: 'Carton Six';
   src: url('cartonsix_nc/Carton_Six.ttf');
@@ -66,12 +65,25 @@ span.out {
 
 }
 
-.floaters{
+/*---------- BODY ---------**/
+
+.content {
+    height: 100%;
+    margin-top: 0;
+}
+
+.container {
+    height: 100%;
+
+}
+
+#floaters {
+    margin-top: 100px;
+    padding-top: 10px;
     left:  0;
     bottom: 0;
     width: 100%;
-    height: 90%;
-    position: absolute;
+
 }
 
 
@@ -81,8 +93,6 @@ span.out {
 .flex-container {
     padding: 0;
     list-style: none;
-    height: 48%;
-
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -97,11 +107,6 @@ span.out {
     width: 30%;
     height: 200px;
     margin-top: 0;
-/*
-    margin-left: 80px;
-    margin-top: 50px;
-*/
-
     line-height: 150px;
     font-weight: bold;
     font-size: 3em;
@@ -110,31 +115,44 @@ span.out {
 
 
 /*** Circular Divs ***/
+
+.row {
+
+}
+
+.s4{
+
+}
+
+#icon-row-1 {
+    position: relative;
+    height: 40%;
+
+}
+
 .circleBase {
+    width:50%;
+    height: 0;
+    padding-bottom: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-    width: 100%;
-    height: auto;
 
-}
-
-.circleBase img {
-    width: 100%;
-    height: 100%;
-}
-
-#anger, #disguist, #joy, #sad, #fear {
-    width: 100%;
-    height: 100%;
     background: black;
     border: 3px solid;
     overflow: hidden;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
 }
+
+
+
+
+
 
 #anger {
     border:red;
     margin-left: 0;
-    margin-top: 10%;
+    margin-top: 0;
     -webkit-animation-name: fadeInUpBig;
     animation-name: fadeInUpBig;
     -webkit-animation-delay: -1.3s;
@@ -147,8 +165,8 @@ span.out {
 
 #joy {
     border:yellow;
-    margin-left: -30%;
-    margin-top: 60%;
+    margin-left: 0;
+    margin-top: 0;
     -webkit-animation-name: fadeInUpBig;
     animation-name: fadeInUpBig;
     -webkit-animation-delay: -0.6s;
@@ -159,8 +177,8 @@ span.out {
 
 #disguist {
     border:green;
-    margin-left: 30%;
-    margin-top: 60%;
+    margin-left: 0;
+    margin-top: 0;
     -webkit-animation-name: fadeInUpBig;
     animation-name: fadeInUpBig;
     -webkit-animation-delay: 2s;
@@ -171,8 +189,8 @@ span.out {
 
 #sad {
     border:blue;
-    margin-left: 80%;
-    margin-top: -25%;
+    margin-left: 0;
+    margin-top: 0;
     -webkit-animation-name: fadeInUpBig;
     animation-name: fadeInUpBig;
     -webkit-animation-delay: 3s;
@@ -183,8 +201,8 @@ span.out {
 
 #fear {
     border:purple;
-    margin-left: -80%;
-    margin-top: -25%;
+    margin-left: 0;
+    margin-top: 0%;
     -webkit-animation-name: fadeInUpBig;
     animation-name: fadeInUpBig;
     -webkit-animation-delay: 3s;

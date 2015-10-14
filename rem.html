@@ -24,8 +24,9 @@
 <!--    </div>-->
 
 <!--- ALL content will be in this 'content' container -->
-<div class="content">
+
     <!-- Header -->
+<!--
     <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper">
@@ -40,20 +41,21 @@
           </div>
         </nav>
     </div>
+-->
 
 
-
+<div class="content">
     <!-- Body --->
     <div class="container">
         <!-- Body- Icons -->
-        <div class="row">
-            <div class="floaters">
+        <!--- METHOD 2 ---->
+<!--
+        <div id="floaters" class="row">
                 <ul class="flex-container">
-                    <li class="flex-item">
-                        <div id="disguist" class="circleBase animated">
+                    <li class="">
+                        <li id="disguist" class="circleBase animated flex-item">
                             <img src="Main/assets/icon_disguist.jpg">
-                        </div>
-                    </li>
+                        </li>
                     <li class="flex-item animated">
                         <div id="anger" class="circleBase">
                             <img src="Main/assets/icon_anger.jpg">
@@ -77,11 +79,33 @@
                         </div>
                     </li>
                 </ul>
-            </div> <!-- End of floaters-->
-        </div> <!-- End of Row -->
+            </div>  End of floaters Row
+-->
 
+
+        <!--- METHOD 2 ---->
+        <div id="icon-row-1" class="row">
+            <div class="col s4">
+                <div id="disguist" class="circleBase animated">
+                    <img src="Main/assets/icon_disguist.jpg" href="#">
+                </div>
+            </div>
+
+             <div class="col s4">
+                 <div id="anger" class="circleBase animated">
+                    <img src="Main/assets/icon_anger.jpg" href="#">
+                 </div>
+            </div>
+
+            <div class="col s4">
+                <div id="joy" class="circleBase animated">
+                    <img src="Main/assets/icon_joy.jpg" href="#">
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- End Container-->
 </div><!-- End Content-->
-</div>
 
 
 </body>
