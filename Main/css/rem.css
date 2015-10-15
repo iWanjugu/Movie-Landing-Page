@@ -72,10 +72,6 @@ span.out {
     margin-top: 0;
 }
 
-.container {
-    height: 100%;
-
-}
 
 #floaters {
     margin-top: 100px;
@@ -115,22 +111,38 @@ span.out {
 
 
 /*** Circular Divs ***/
+.container {
+    margin-top: 50px;
+    height: auto;
+
+}
 
 .row {
 
+
+
 }
+.s2 {
+    width: 20%;
+    height: 100%
+}
+
 
 .s4{
+    height: 100%;
+    position: relative;
 
 }
 
-#icon-row-1 {
+#icon-row-1, #icon-row-2 {
     position: relative;
     height: 40%;
+    padding-top: 50px
 
 }
 
 .circleBase {
+    /** Making Circle div responsive **/
     width:50%;
     height: 0;
     padding-bottom: 50%;
@@ -138,15 +150,41 @@ span.out {
     -webkit-border-radius: 50%;
     border-radius: 50%;
 
+    /*** Centering in div**/
+    /*to fit in div*/
+/*
+    min-width: 100%;
+    width: auto;
+*/
+
+    /*aligning vertically*/
+    position: absolute; /*parent div should be relatively positioned*/
+    top: 50%;
+    transform: translate(50%, -50%);
+
+    /*aligning horizontally*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
     background: black;
     border: 3px solid;
     overflow: hidden;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
 }
 
+.circleBase img {
+    float:left;
+    width:100%;
+    padding-top: 0;
+    line-height:1em;
+    margin-top:-0.4em;
+    text-align:center;
+    color:white;
 
 
-
+}
 
 
 #anger {
