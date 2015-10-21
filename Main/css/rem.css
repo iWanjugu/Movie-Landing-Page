@@ -17,19 +17,34 @@ body {
 .content {
   position: relative;
   z-index: 2;
+  height: 90%;
 }
 
+/**----- Aligning Divs ---------**/
+.center-h {
+    left: 50%;
+    transform: translate(-50%, 0%);
+     position: absolute;
+}
 
+.center-v {
+    top: 50%;
+    transform: translate(0%, -50%);
+     position: absolute;
+}
+
+.center-c {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+/*____________________________________________________________*/
 /*------- VIDEO BG --------*/
 .videobg {
     position: fixed;
-    z-index: 1;
-
-    /** CENTERING
-    So if we nudge something 50% from the top of a container, then translate it         back up a negative 50%, it will be perfectly centred. That leaves us with this:
-    */
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: -1;
 
     /** FULL SCREENING **/
     min-width: 100%;
@@ -45,70 +60,78 @@ body {
     -ms-filter:brightness(30%);
 }
 
+/
+/*-------------------------------------------------------------- */
+/*------- HOME PAGE----------*/
 
 
-/*---------- Title and Nav Bar ---------**/
+/
+/*-------------------------------------------------------------- */
+/*------- Nav Bar ----------*/
 @font-face {
   font-family: 'Carton Six';
   src: url('cartonsix_nc/Carton_Six.ttf');
 }
 
-span.inside {
-    font-family: 'Carton Six';
-    font-size: 1.5em;
-}
-
-span.out {
-    margin-left: 50px;
-    font-family: 'Carton Six';
-    font-size: 1.5em;
-
-}
-
-/*---------- BODY ---------**/
-
-.content {
-    height: 100%;
-    margin-top: 0;
-}
-
-
-#floaters {
-    margin-top: 100px;
-    padding-top: 10px;
-    left:  0;
-    bottom: 0;
+.nav-top {
     width: 100%;
+    height: 61px;
+    background-color: black;
+    z-index: 1000;
+    position: fixed;
 
+    -webkit-filter: opacity (0.2);
+    filter: opacity (0.2);
 }
 
-
-/**** Styling Icons *****/
-@import "compass/css3";
-
-.flex-container {
-    padding: 0;
-    list-style: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    -webkit-flex-flow: row wrap;
-    justify-content: space-around;
+.nav-top a {
+    color: #fff;
+    font-size: .9rem;
 }
 
-.flex-item {
-    width: 30%;
-    height: 200px;
-    margin-top: 0;
-    line-height: 150px;
-    font-weight: bold;
-    font-size: 3em;
+/*--- logo - left ---*/
+
+#nav-logo, .s2 {
     text-align: center;
 }
 
+#nav-logo a {
+   margin-top: 23px;
+}
+
+
+/*--- menu - center ---*/
+#nav-menu {
+    width: 100%;
+    height: 100%;
+}
+
+#nav-menu div {
+    background-color: black;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+#nav-menu #home { width: 60px; }
+
+#nav-menu #about { width: 85px }
+
+#nav-menu #videos { width: 70px; }
+
+
+#nav-menu.active {
+    background-color: #588c7e;
+    color: #000;
+    font-weight: bold;
+}
+
+/*---------- BODY ---------*/
+#home-page {
+    height: 100%;
+    min-height: 800px;
+    width: 100%;
+}
 
 /*** Circular Divs ***/
 .container {
