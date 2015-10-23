@@ -9,30 +9,34 @@ video {
   padding: 0;
 }
 
-html,
-body {
+html {
   height: 100%;
 }
 
-.content {
-  position: relative;
-  z-index: 2;
-  height: 90%;
+body{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
 }
 
 /**----- Aligning Divs ---------**/
+/*---- Align horizontal --*/
 .center-h {
     left: 50%;
     transform: translate(-50%, 0%);
      position: absolute;
 }
 
+/*---- Align vertical --*/
 .center-v {
+
     top: 50%;
     transform: translate(0%, -50%);
-     position: absolute;
+    position: absolute;
 }
 
+/*---- Align center --*/
 .center-c {
     top: 50%;
     left: 50%;
@@ -44,7 +48,7 @@ body {
 /*------- VIDEO BG --------*/
 .videobg {
     position: fixed;
-    z-index: -1;
+    z-index: -10;
 
     /** FULL SCREENING **/
     min-width: 100%;
@@ -63,6 +67,17 @@ body {
 /
 /*-------------------------------------------------------------- */
 /*------- HOME PAGE----------*/
+#home-page {
+    height: 100%;
+    width: 100%;
+}
+.container {
+    height: 100%;
+}
+
+
+
+
 
 
 /
@@ -75,9 +90,10 @@ body {
 
 .nav-top {
     width: 100%;
-    height: 61px;
+    height: 70px;
     background-color: black;
     z-index: 1000;
+    top: 0;
     position: fixed;
 
     -webkit-filter: opacity (0.2);
@@ -102,22 +118,30 @@ body {
 
 /*--- menu - center ---*/
 #nav-menu {
-    width: 100%;
+/*    width: 100%;*/
     height: 100%;
 }
 
-#nav-menu div {
+.menus {
     background-color: black;
+    width: 50%;
     height: 100%;
+    margin: 0;
     text-align: center;
-    display: inline-block;
 }
 
-#nav-menu #home { width: 60px; }
+.menus a {
+    height: 50%;
+    margin-top: 17px;
+    display: inline-block;
+    padding-top: 10px;
+}
 
-#nav-menu #about { width: 85px }
+#nav-menu .menus #home { width: 60px; }
 
-#nav-menu #videos { width: 70px; }
+#nav-menu .menus #about { width: 120px }
+
+#nav-menu .menus #videos { width: 63px; }
 
 
 #nav-menu.active {
@@ -127,22 +151,7 @@ body {
 }
 
 /*---------- BODY ---------*/
-#home-page {
-    height: 100%;
-    min-height: 800px;
-    width: 100%;
-}
-
 /*** Circular Divs ***/
-.container {
-    margin-top: 100px;
-    height: auto;
-}
-
-.row {
-
-}
-
 .s2 {
     width: 20%;
     height: 100%
