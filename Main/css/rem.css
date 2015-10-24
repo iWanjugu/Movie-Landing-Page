@@ -87,15 +87,12 @@ body{
 /
 /*-------------------------------------------------------------- */
 /*------- HOME PAGE----------*/
+
 #home-page {
-    height: 100%;
-    width: 100%;
-}
-.container {
     height: 100%;
 }
 
-/
+
 /*-------------------------------------------------------------- */
 /*------- Nav Bar ----------*/
 @font-face {
@@ -163,7 +160,6 @@ body{
 
 #nav-menu .menus #videos { width: 63px; }
 
-
 #nav-menu.active {
     background-color: #588c7e;
     color: #000;
@@ -171,25 +167,27 @@ body{
 }
 
 /*---------- BODY ---------*/
+#body-content {
+    height: 100%;
+    position: relative;
+}
 /*** Circular Divs ***/
 .s2 {
     width: 20%;
     height: 100%
 }
 
-
 #icon-row-1 {
     position: relative;
-    height: 30%;
-    padding-top: 30px;
-    margin-top: 10%
-
+    height: 200px;
+    top: 120px;
+    padding-top: 20px;
 }
 
 #icon-row-2 {
     position: relative;
-    height: 20%;
-    margin-top: 10%;
+    height: 200px;
+    top: 300px;
 }
 
 .circleBase {
@@ -318,6 +316,21 @@ body{
 
     }
 }
+
+/*____________________________________________________________*/
+/*---Footer ---*/
+#footer {
+    z-index: 1000;
+    bottom: 0;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: black;
+
+}
+
+
+
 
 /*____________________________________________________________*/
 /*---mobile ---*/
