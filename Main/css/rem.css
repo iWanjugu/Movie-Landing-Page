@@ -40,6 +40,10 @@ body{
     height: auto;
 }
 
+#home-page {
+    height: 100%;
+}
+
 /**----- Aligning Divs ---------**/
 /*---- Align horizontal --*/
 .center-h {
@@ -88,9 +92,7 @@ body{
 /*-------------------------------------------------------------- */
 /*------- HOME PAGE----------*/
 
-#home-page {
-    height: 100%;
-}
+
 
 
 /*-------------------------------------------------------------- */
@@ -167,8 +169,11 @@ body{
 }
 
 /*---------- BODY ---------*/
-#body-content {
+.container {
     height: 100%;
+}
+#body-content {
+    height: 500px;
     position: relative;
 }
 /*** Circular Divs ***/
@@ -180,14 +185,14 @@ body{
 #icon-row-1 {
     position: relative;
     height: 200px;
-    top: 120px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 #icon-row-2 {
     position: relative;
     height: 200px;
-    top: 300px;
+    padding-top: 60px;
+    margin-top: 50px;
 }
 
 .circleBase {
@@ -295,28 +300,6 @@ body{
 }
 
 
-/* Small screens */
-@media all and (max-width: 500px, max-height: 500px) {
-  .bg{
-/*    height: 100%;*/
-    overflow: hidden;
-    flex-direction: column;
-  }
-#anger, #disguist, #joy, #sad, #fear {
-    margin: 0;
-    }
-.videobg{
-/*    width: 100%;*/
-/*    height: 100%;*/
-    filter:brightness(100%);
-    -webkit-filter:brightness(0%);
-    -moz-filter:brightness(30%);
-    -o-filter:brightness(30%);
-    -ms-filter:brightness(30%);
-
-    }
-}
-
 /*____________________________________________________________*/
 /*---Footer ---*/
 #footer {
@@ -327,21 +310,43 @@ body{
     width: 100%;
     background-color: black;
 
+    font-family: 'Homemade Apple', cursive;
+    font-size: .9rem;
+    color: white;
+    text-align: center;
 }
 
-
+#footer .s8 {
+    height: 100%;
+}
 
 
 /*____________________________________________________________*/
 /*---mobile ---*/
+@media (max-width: 400px) {
+    #body-content {
+
+    }
+    #icon-row-1 {
+    position: relative;
+    height: 200px;
+    padding-top: 30px;
+}
+
+#icon-row-2 {
+    position: relative;
+    height: 200px;
+    padding-top: 60px;
+    margin-top: 50px;
+}
+}
 
 @media (max-width: 600px) {
     #nav-menu, .menus {
         width: 100%;
     }
 
-    .circleBase {
-    /** Making Circle div responsive **/
+    .bubble {
     width: 200px;
     height: 200px;
 
@@ -350,4 +355,8 @@ body{
     -webkit-border-radius: 50%;
     border-radius: 50%;
 
+    }
+    #footer .s8 {
+        width: 100%;
+    }
 }
