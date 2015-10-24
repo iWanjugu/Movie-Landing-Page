@@ -1,3 +1,22 @@
+/*------ FONTS ------*/
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower|Poiret+One|Satisfy|Delius|Homemade+Apple);
+
+/*
+
+font-family: 'Indie Flower', cursive;
+
+font-family: 'Poiret One', cursive;
+
+font-family: 'Satisfy', cursive;
+
+font-family: 'Delius', cursive;
+
+font-family: 'Homemade Apple', cursive;
+
+*/
+
+/*---- General Styling ---------*/
+
 html,
 body,
 div,
@@ -10,10 +29,11 @@ video {
 }
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body{
+    font-family: 'Indie Flower', cursive;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -75,11 +95,6 @@ body{
     height: 100%;
 }
 
-
-
-
-
-
 /
 /*-------------------------------------------------------------- */
 /*------- Nav Bar ----------*/
@@ -89,15 +104,20 @@ body{
 }
 
 .nav-top {
+    /* Positioning */
+
     width: 100%;
     height: 70px;
     background-color: black;
     z-index: 1000;
     top: 0;
     position: fixed;
-
     -webkit-filter: opacity (0.2);
     filter: opacity (0.2);
+
+    /* Font */
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2.4rem;
 }
 
 .nav-top a {
@@ -202,8 +222,8 @@ body{
     float:left;
     width:100%;
     padding-top: 0;
-    line-height:1em;
     margin-top:0;
+    line-height:1em;
     text-align:center;
     color:white;
 }
@@ -296,5 +316,25 @@ body{
     -o-filter:brightness(30%);
     -ms-filter:brightness(30%);
 
+    }
 }
+
+/*____________________________________________________________*/
+/*---mobile ---*/
+
+@media (max-width: 600px) {
+    #nav-menu, .menus {
+        width: 100%;
+    }
+
+    .circleBase {
+    /** Making Circle div responsive **/
+    width: 200px;
+    height: 200px;
+
+/*    padding-bottom: 50%;*/
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+
 }
