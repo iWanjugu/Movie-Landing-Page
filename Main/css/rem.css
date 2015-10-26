@@ -42,6 +42,7 @@ body{
 
 #home-page {
     height: 100%;
+    overflow: hidden;
 }
 
 /**----- Aligning Divs ---------**/
@@ -90,13 +91,10 @@ body{
 
 /
 /*-------------------------------------------------------------- */
-/*------- HOME PAGE----------*/
+/*------- BODY ----------*/
 
 
-
-
-/*-------------------------------------------------------------- */
-/*------- Nav Bar ----------*/
+/*---- Nav Bar --*/
 @font-face {
   font-family: 'Carton Six';
   src: url('cartonsix_nc/Carton_Six.ttf');
@@ -168,7 +166,8 @@ body{
     font-weight: bold;
 }
 
-/*---------- BODY ---------*/
+/*--------------------------------------------------------*/
+/*---------- Content ---------*/
 .container {
     height: 100%;
 }
@@ -303,8 +302,9 @@ body{
 /*____________________________________________________________*/
 /*---Footer ---*/
 #footer {
-    z-index: 1000;
     bottom: 0;
+    margin-bottom: 0;
+    z-index: 1000;
     position: fixed;
     height: 70px;
     width: 100%;
@@ -322,11 +322,12 @@ body{
 
 
 /*____________________________________________________________*/
-/*---mobile ---*/
+/*---media queries ---*/
 @media (max-width: 400px) {
     #body-content {
 
     }
+
     #icon-row-1 {
     position: relative;
     height: 200px;

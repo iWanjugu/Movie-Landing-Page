@@ -17,42 +17,43 @@
 
     <link rel="font" href="Main/css/Carton_Six.ttf">
     <!--optimized for mobile-->
+    <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="Main/js/jquery-2.1.4.js"></script>
+      <script type="text/javascript" src="Materialize/js/materialize.min.js"></script>
 
     </head>
 <body>
-    <!--Import jQuery before materialize.js-->
-          <script type="text/javascript" src="Main/js/jquery-2.1.4.js"></script>
-          <script type="text/javascript" src="Materialize/js/materialize.min.js"></script>
 
-<!----------------------------------->
-<!-- video Background -->
-<video class="videobg center-c" autoplay loop="auto" muted>
-    <source src="Main/assets/paint1.mp4" type="video/mp4">
-    <source src="Main/assets/paint1.webm" type="video/webm" />
-</video>
-
-
-<!----------------------------------->
-    <!----- WHOLE PAGE --->
+<!------------------------------------------------------------------------------->
+<!----- WHOLE PAGE --->
 <div id="home-page" class="row">
+
+<!----------------------------------->
+    <!-- video Background -->
+    <video class="videobg center-c" autoplay loop="auto" muted>
+        <source src="Main/assets/paint1.mp4" type="video/mp4">
+        <source src="Main/assets/paint1.webm" type="video/webm" />
+    </video>
+
+<!----------------------------------->
     <!---- NavBar----->
-        <div class="row nav-top">
-            <div id="nav-logo" class="col s2 hide-on-small-only">
-               <a href="#" class="left">Logo</a>
-            </div>
-            <div id="nav-menu" class="col s8">
-                <div class="menus center-h">
-                    <a id="home" href="#">home</a>
-                    <a id="about" href="#">meet the emotions</a>
-                    <a id="videos" href="#">videos</a>
-                </div>
-            </div>
-            <div class="col s2 hide-on-small-only"></div>
+    <div class="row nav-top">
+        <div id="nav-logo" class="col s2 hide-on-small-only">
+           <a href="#" class="left">Logo</a>
         </div>
+        <div id="nav-menu" class="col s8">
+            <div class="menus center-h">
+                <a id="home" href="#">home</a>
+                <a id="about" href="#">meet the emotions</a>
+                <a id="videos" href="#">videos</a>
+            </div>
+        </div>
+        <div class="col s2 hide-on-small-only"></div>
+    </div>
 
-
-    <!-- Body --->
-        <div class="container">
+<!----------------------------------->
+    <!---- Body ---->
+    <div class="container">
                    <!--- METHOD 2 ---->
         <div id="body-content" class="=row center-c">
             <div id="icon-row-1" class="row">
@@ -90,9 +91,10 @@
                 <div class="col s2"></div>
             </div>
         </div> <!-- End of Body-content-->
-        </div> <!-- End Container-->
+    </div> <!-- End Container-->
 
-    <!---- NavBar----->
+<!----------------------------------->
+    <!---- Footer----->
     <div id="footer" class="row">
         <div class="row">
             <div class="col s2 hide-on-small-only"></div>
@@ -105,10 +107,10 @@
         </div>
     </div><!--- End of Footer -->
 
-
+<!--------------------------------->
 </div><!-- End Whole page-->
 
-
+<!----------------------------------------------------------------------->
 </body>
 
 
