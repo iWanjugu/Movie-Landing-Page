@@ -1,61 +1,116 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Inside Out</title>
-		<link rel="shortcut icon" href="../favicon.ico">
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0>
+    <title>Inside Out</title>
 
-        <!--- STYTLESHEETS -->
-		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="Main/css/main.css">
-		<link rel="stylesheet" type="text/css" href="Materialize/css/materialize.css" media="screen,projection"/> <!--materialize -->
-        <link rel="stylesheet" type="text/css" href="Materialize/css/materialize.min.css" media="screen,projection"/>
-        <!--opetimized for mobile-->
-         <meta name="viewport" content="width=device-width" initial-scale: 1.0, user-scalable=0>
-        <!---- SCRIPTS ---->
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <script src="Main/js/jquery-2.1.4.js"></script>
-              <script src="Materialize/js/materialize.js"></script>
-        <script src="Materialize/js/materialize.min.js"></script>
-        <script src="Main/main.js"></script>
-<!--        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>-->
+<!--    <link rel="stylesheet" href="Materialize/css/materialize.css">-->
+    <link rel="stylesheet" href="Materialize/css/materialize.min.css">
+<!--    <link rel="stylesheet" href="mdl/material.min.css">-->
+    <link rel="stylesheet" href="Main/css/rem.css">
+    <link rel="stylesheet" href="Main/css/bubble.css">
+    <link rel="stylesheet" href="Main/css/animate.css">
+
+    <link rel="font" href="Main/css/Carton_Six.ttf">
+    <!--optimized for mobile-->
+    <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="Main/js/jquery-2.1.4.js"></script>
+      <script type="text/javascript" src="Materialize/js/materialize.min.js"></script>
 
     </head>
-
 <body>
-<div class="container">
-    <div class="row">
-      <!-- Nav Bar --->
-    <div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper">
-            <a class="brand-logo">
-                <img src="Main/assets/Inside_Out_Logo_Black.jpg">
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Meet the emotions</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-    <!-------------------------------------------------------------------------->
-    <!--- PAGE 1: Title --->
-    <div id="intro" class="row">
 
-        <div class="col s12 intro-image">
-            <img class="responsive-img" src="Main/assets/background1.jpg">
+<!------------------------------------------------------------------------------->
+<!----- WHOLE PAGE --->
+<div id="home-page" class="row">
+
+<!----------------------------------->
+    <!-- video Background -->
+    <video class="videobg center-c" autoplay loop="auto" muted>
+        <source src="Main/assets/paint1.mp4" type="video/mp4">
+        <source src="Main/assets/paint1.webm" type="video/webm" />
+    </video>
+
+<!----------------------------------->
+    <!---- NavBar----->
+    <div class="row nav-top">
+        <div id="nav-logo" class="col s2 hide-on-small-only">
+           <a href="#" class="left">Logo</a>
         </div>
-
+        <div id="nav-menu" class="col s8">
+            <div class="menus center-h">
+                <a id="home" href="#">home</a>
+                <a id="about" href="#">meet the emotions</a>
+                <a id="videos" href="#">videos</a>
+            </div>
+        </div>
+        <div class="col s2 hide-on-small-only"></div>
     </div>
-<div class="container">
-</div>
-    </div>
 
+<!----------------------------------->
+    <!---- Body ---->
+    <div class="container">
+                   <!--- METHOD 2 ---->
+        <div id="body-content" class="=row center-c">
+            <div id="icon-row-1" class="row">
+                <div class="col s4">
+                    <div id="disguist" class="circleBase animated bubble">
+                        <img src="Main/assets/icon_disguist.jpg" href="#">
+                    </div>
+                </div>
 
-    </div>
+                 <div class="col s4">
+                     <div id="anger" class="circleBase animated bubble">
+                        <img src="Main/assets/icon_anger.jpg" href="#">
+                     </div>
+                </div>
 
+                <div class="col s4">
+                    <div id="joy" class="circleBase animated bubble">
+                        <img src="Main/assets/icon_joy.jpg" href="#">
+                    </div>
+                </div>
+            </div>
+
+            <div id="icon-row-2" class="row">
+                <div class="col s2"></div>
+                <div class="col s4">
+                     <div id="sad" class="circleBase animated bubble">
+                        <img src="Main/assets/icon_sadness.jpg">
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div id="fear" class="circleBase animated bubble">
+                        <img src="Main/assets/icon_fear.jpg">
+                    </div>
+                </div>
+                <div class="col s2"></div>
+            </div>
+        </div> <!-- End of Body-content-->
+    </div> <!-- End Container-->
+
+<!----------------------------------->
+    <!---- Footer----->
+    <div id="footer" class="row">
+        <div class="row">
+            <div class="col s2 hide-on-small-only"></div>
+            <div class="col s8">
+                <p class="center-c">
+                    2015   |   &copy; Wanjugu
+                </p>
+            </div>
+            <div class="col s2 hide-on-small-only"></div>
+        </div>
+    </div><!--- End of Footer -->
+
+<!--------------------------------->
+</div><!-- End Whole page-->
+
+<!----------------------------------------------------------------------->
 </body>
 
 
